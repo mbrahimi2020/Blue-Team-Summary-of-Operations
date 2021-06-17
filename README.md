@@ -46,6 +46,8 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 ### Monitoring the Targets
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
+## Watcher History
+![Watcher_History](https://user-images.githubusercontent.com/74498617/122436835-238daa80-cf67-11eb-9f29-3f35eec09b46.png)
 
 #### Excessive HTTP Errors
 Alert 1 is implemented as follows:
@@ -73,9 +75,7 @@ Alert 3 is implemented as follows:
   - **Reliability**: Yes this alert can generate a lot of false positives bc the cpu can spike even if there is not an attack.
 ![cpu-Usage](https://user-images.githubusercontent.com/74498617/122436580-f0e3b200-cf66-11eb-87fd-f2b226978767.png)
 
-## Watcher History
 
-![Watcher_History](https://user-images.githubusercontent.com/74498617/122436835-238daa80-cf67-11eb-9f29-3f35eec09b46.png)
 
 
 

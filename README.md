@@ -1,4 +1,3 @@
-# mbrahimi2020-https-github.com-mbrahimi2020-Blue-Team-Summary-of-Operations
 # Blue Team: Summary of Operations
 
 ## Table of Contents

@@ -41,6 +41,11 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 * [HTTP Request Size Monitor](#http-request-size-monitor)
 * [CPU Usage Monitor](#cpu-usage-monitor)
 
+- Wtcher History
+
+![Watcher_History](https://user-images.githubusercontent.com/74498617/122436835-238daa80-cf67-11eb-9f29-3f35eec09b46.png)
+
+
 ### Monitoring the Targets
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
@@ -51,6 +56,7 @@ Alert 1 is implemented as follows:
   - **Threshold**: 5 in last 5 minutes
   - **Vulnerability Mitigated**: By creating an alert, the security team can identify attacks & block the ip, change the password, & close or filter the port 22
   - **Reliability**: No, this alert does not generate a lot of false positives. This alert is highly reliable in identifying brute force attacks.
+![HTTP-Errors](https://user-images.githubusercontent.com/74498617/122436371-c560c780-cf66-11eb-8830-a4c21e245f55.png)
 
 #### HTTP Request Size Monitor
 Alert 2 is implemented as follows:
@@ -58,12 +64,16 @@ Alert 2 is implemented as follows:
   - **Threshold**: 3500 in last 1 minute
   - **Vulnerability Mitigated**: By controlling the number of http request size through a filter it protects against DDOS attacks
   - **Reliability**: No, this alert doesn't generate a lot of false positives bc it is reliable.
+
+![request-size](https://user-images.githubusercontent.com/74498617/122436471-d6a9d400-cf66-11eb-87c3-e05bbe878fec.png)
+
 #### CPU Usage Monitor
 Alert 3 is implemented as follows:
   - **Metric**: `system.process.cpu.total.pct`
   - **Threshold**: 0.5 in last 5 minutes
   - **Vulnerability Mitigated**: By controlling the CPU usuage percentage at 50%, it will trigger a memory dump of stored information is generated
   - **Reliability**: Yes this alert can generate a lot of false positives bc the cpu can spike even if there is not an attack.
+![cpu-Usage](https://user-images.githubusercontent.com/74498617/122436580-f0e3b200-cf66-11eb-87fd-f2b226978767.png)
 
 ### Suggestions for Going Further (Optional)
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.

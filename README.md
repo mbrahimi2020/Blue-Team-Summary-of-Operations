@@ -15,33 +15,22 @@ The following machines were identified on the network:
 
 **Network**
 - Address Range: 192.168.1.0/24
-  Netmask: 255.255.255.0
-  Gateway: 192.168.1.1
+ - Netmask: 255.255.255.0
+  - Gateway: 192.168.1.1
 
 **Machines**
 
-- IPv4: 192.168.1.1
-- OS: Windows
-- Hostname: **ML-RefVM-684427**
+- IPv4: 192.168.1.1,  OS: Windows, Hostname: **ML-RefVM-684427**
 
-- IPv4: 192.168.1.8
-- OS: Linux
--Hostname: **Kali**
+- IPv4: 192.168.1.8, OS: Linux, Hostname: **Kali**
 
-IPv4: 192.168.1.110
-OS: Linux
-Hostname: **Target 1**
+- IPv4: 192.168.1.110, OS: Linux, Hostname: **Target 1**
 
-IPv4: 192.168.1.115
-OS: Linux
-Hostname: **Target 2**
-IPv4: 192.168.1.105
+- IPv4: 192.168.1.115, OS: Linu, Hostname: **Target 2**
 
-OS: Linux
-Hostname: **Capstone**
-IPv4: 192.168.1.100
-OS: Linux
-Hostname: **ELK**
+- IPv4: 192.168.1.105, OS: Linux, Hostname: **Capstone**
+
+- IPv4: 192.168.1.100, OS: Linux, Hostname: **ELK**
 
 ### Description of Targets
 

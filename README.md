@@ -51,8 +51,9 @@ Traffic to these services should be carefully monitored. To this end, we have im
 Alert 1 is implemented as follows:
   - **Metric**: `http.response.status_code` > 400
   - **Threshold**: 5 in last 5 minutes
-  - **Vulnerability Mitigated**: By creating an alert, the security team can identify attacks & block the ip, change the password, & close or filter the port 22
+  - **Vulnerability Mitigated**: Brute force attack/Enumeration (with this alert, the SOC team can block the attacking IP or change the password being bruteforced.
   - **Reliability**: No, this alert does not generate a lot of false positives. This alert is highly reliable in identifying brute force attacks.
+  - The 400 Bad Request Error is an HTTP response status code that indicates that the server was unable to process the request. This alert does not generate lots of false positives because it measures all HTTP errors (> 400) **every 5 minutes**.
 ![HTTP-Errors](https://user-images.githubusercontent.com/74498617/122436371-c560c780-cf66-11eb-8830-a4c21e245f55.png)
 
 #### HTTP Request Size Monitor
@@ -72,7 +73,7 @@ Alert 3 is implemented as follows:
   - **Reliability**: Yes this alert can generate a lot of false positives bc the cpu can spike even if there is not an attack.
 ![cpu-Usage](https://user-images.githubusercontent.com/74498617/122436580-f0e3b200-cf66-11eb-87fd-f2b226978767.png)
 
-##Watcher History
+## Watcher History
 
 ![Watcher_History](https://user-images.githubusercontent.com/74498617/122436835-238daa80-cf67-11eb-9f29-3f35eec09b46.png)
 

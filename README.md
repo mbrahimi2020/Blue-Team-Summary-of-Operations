@@ -10,27 +10,39 @@
 
 ### Network Topology
 
+![Azure_Ntework_Topology](https://user-images.githubusercontent.com/74498617/122336908-8a7d7600-cf0b-11eb-89d3-f2b914edf9cd.png)
+
 The following machines were identified on the network:
-- Hypervisor / Host Machine (Not a VM)
-  - **Operating System**: Microsoft Windows
-  - **Purpose**: Hypervisor / Gateway
-  - **IP Address**: 192.168.1.1
-- ELK
-  - **Operating System**: Linux
-  - **Purpose**: Elasticsearch, Logstash, Kibana Server
-  - **IP Address**: 192.168.1.100
-- Capstone
-  - **Operating System**: Linux
-  - **Purpose**: Basic HTTP Server (this is a red herring)
-  - **IP Address**: 192.168.1.105
-- Target 1
-  - **Operating System**: Linux
-  - **Purpose**: HTTP Server (also wordpress site)
-  - **IP Address**: 192.168.1.110
-- Target 2
-  - **Operating System**: Linux
-  - **Purpose**: HTTP Server
-  - **IP Address**: 192.168.1.115
+
+**Network**
+Address Range: 192.168.1.0/24
+Netmask: 255.255.255.0
+Gateway: 192.168.1.1
+
+**Machines**
+
+IPv4: 192.168.1.1
+OS: Windows
+Hostname: **ML-RefVM-684427**
+
+IPv4: 192.168.1.8
+OS: Linux
+Hostname: **Kali**
+
+IPv4: 192.168.1.110
+OS: Linux
+Hostname: **Target 1**
+
+IPv4: 192.168.1.115
+OS: Linux
+Hostname: **Target 2**
+IPv4: 192.168.1.105
+
+OS: Linux
+Hostname: **Capstone**
+IPv4: 192.168.1.100
+OS: Linux
+Hostname: **ELK**
 
 ### Description of Targets
 
@@ -82,4 +94,4 @@ The logs and alerts generated during the assessment suggest that this network is
  
 - Vulnerability 3 - CPU Usage Monitor
   - **Patch**: Use Host Instrusion Prevention System to identify DOS attack
-  - **Why It Works**: This stops malware by monitoring the behavior of code![Azure_Ntework_Topology](https://user-images.githubusercontent.com/74498617/122336908-8a7d7600-cf0b-11eb-89d3-f2b914edf9cd.png)
+  - **Why It Works**: This stops malware by monitoring the behavior of code

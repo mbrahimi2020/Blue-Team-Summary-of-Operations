@@ -41,9 +41,6 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 * [HTTP Request Size Monitor](#http-request-size-monitor)
 * [CPU Usage Monitor](#cpu-usage-monitor)
 
-- Wtcher History
-
-![Watcher_History](https://user-images.githubusercontent.com/74498617/122436835-238daa80-cf67-11eb-9f29-3f35eec09b46.png)
 
 
 ### Monitoring the Targets
@@ -74,6 +71,12 @@ Alert 3 is implemented as follows:
   - **Vulnerability Mitigated**: By controlling the CPU usuage percentage at 50%, it will trigger a memory dump of stored information is generated
   - **Reliability**: Yes this alert can generate a lot of false positives bc the cpu can spike even if there is not an attack.
 ![cpu-Usage](https://user-images.githubusercontent.com/74498617/122436580-f0e3b200-cf66-11eb-87fd-f2b226978767.png)
+
+##Watcher History
+
+![Watcher_History](https://user-images.githubusercontent.com/74498617/122436835-238daa80-cf67-11eb-9f29-3f35eec09b46.png)
+
+
 
 ### Suggestions for Going Further (Optional)
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.

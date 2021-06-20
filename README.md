@@ -82,19 +82,39 @@ https://appuals.com/fix-high-cpu-and-memory-usage-by-mrt-exe/
 However, this alert is still **highly reliable** because knowing that “CPU usage is above 50% in the last 5 minutes)” helps check/troubleshoot what caused this high CPU usage.
 
 ![cpu-Usage](https://user-images.githubusercontent.com/74498617/122436580-f0e3b200-cf66-11eb-87fd-f2b226978767.png)
+  ### Suggestions for Going Further
+**Suggest a patch for each vulnerability identified by the alerts above.** Remember: alerts only detect malicious behavior. They do not prevent it. It is not necessary to explain how to implement each patch.
 
-### Suggestions for Going Further (Optional)
-- Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
+The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
 
-The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
-- Vulnerability 1- Excessive HTTP Errors
-  - **Patch**: Require a stronger password policy in the user account settings. Update the account password policy in Windows group policy through /etc/security/pwquality.conf & through /etc/security/pwquality.conf in Linux
-  -  **Why It Works**: By having a strong password it will be almost impossible to guess or brute force
+**Excessive HTTP Errors**
+- Patch: Harden they wordpress by:
+    - Implementing regular updates to WordPress by installing the latest versions of PHP and Plugins
+    - Installing security plugin(s) 
+   Suggestions on how to implement this patch are available in https://wordpress.org/plugins/clearfy/
+
+- Why It Works: 
+    - Regular updates implement patches and fix vulnerabilities.
+**HTTP Request Size Monitor**
+
+- Patch: 
+
+     - Limit the number of HTTP requests within a specified time.
+     - Block HTTP requests from suspicious ips by configuring web server settings
+     
+Suggestions on how to implement this patch are available in https://clouddocs.f5.com/api/irules/Limit-the-number-of-HTTP-requests-by-a-client-within-a-specified-time.html
+
+- Why It Works: 
   
-- Vulnerability 2 - HTTP Request Size Monitor
-  - **Patch**: Use advanced intrusion prevention and threat management systems, which combine firewalls, VPN, anti-spam, content filtering, load balancing, and other layers of DDoS defense techniques. Together they enable constant and consistent network protection to prevent a DDoS attack from happening. This includes everything from identifying possible traffic inconsistencies with the highest level of precision in blocking the attack
-  - **Why It Works**: Given the complexity of DDoS attacks, there’s hardly a way to defend against them without appropriate systems to identify anomalies in traffic and provide instant response. Backed by secure infrastructure and a battle-plan, such systems can minimize the threat.
- 
-- Vulnerability 3 - CPU Usage Monitor
-  - **Patch**: Use Host Instrusion Prevention System to identify DOS attack
-  - **Why It Works**: This stops malware by monitoring the behavior of code
+     - Blocking/Removing public access to WordPress reduces the number of attacks		
+     - it helps  reject the HTTP requests that are too large.
+  
+**CPU Usage Monitor**
+- Patch:  
+
+- Use strong antivirus software
+- Implement advanced intrusion Detection/prevention and threat management system.
+       
+- Why It Works: 
+    - Strong Antivirus should be able to detect/remove malicious malware which are one of the main causes of High CPU usage.  
+        

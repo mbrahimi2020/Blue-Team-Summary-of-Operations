@@ -91,7 +91,8 @@ The logs and alerts generated during the assessment suggest that this network is
 - Patch: Harden they wordpress by:
     - Implementing regular updates to WordPress by installing the latest versions of PHP and Plugins
     - Installing security plugin(s) 
-   Suggestions on how to implement this patch are available in https://wordpress.org/plugins/clearfy/
+  
+Suggestions on how to implement this patch are available in https://wordpress.org/plugins/clearfy/
 
 - Why It Works: 
     - Regular updates implement patches and fix vulnerabilities.
@@ -102,7 +103,8 @@ The logs and alerts generated during the assessment suggest that this network is
      - Limit the number of HTTP requests within a specified time.
      - Block HTTP requests from suspicious ips by configuring web server settings
      
-Suggestions on how to implement this patch are available in https://clouddocs.f5.com/api/irules/Limit-the-number-of-HTTP-requests-by-a-client-within-a-specified-time.html
+Suggestions on how to implement this patch are available in 
+https://clouddocs.f5.com/api/irules/Limit-the-number-of-HTTP-requests-by-a-client-within-a-specified-time.html
 
 - Why It Works: 
   
@@ -112,9 +114,9 @@ Suggestions on how to implement this patch are available in https://clouddocs.f5
 **CPU Usage Monitor**
 - Patch:  
 
-- Use strong antivirus software
-- Implement advanced intrusion Detection/prevention and threat management system.
+  - Use strong antivirus software
+  - Implement advanced intrusion Detection/prevention and threat management system.
        
 - Why It Works: 
-    - Strong Antivirus should be able to detect/remove malicious malware which are one of the main causes of High CPU usage.  
+     - Strong Antivirus should be able to detect/remove malicious malware which are one of the main causes of High CPU usage.  
         

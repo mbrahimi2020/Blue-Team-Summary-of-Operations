@@ -28,7 +28,7 @@ The following machines were identified on the network:
 
 - IPv4: 192.168.1.110, OS: Linux, Hostname: **Target 1**
 
-- IPv4: 192.168.1.115, OS: Linu, Hostname: **Target 2**
+- IPv4: 192.168.1.115, OS: Linu, Hostname: **Target 2** (Not included in the attack).
 
 - IPv4: 192.168.1.105, OS: Linux, Hostname: **Capstone**
 

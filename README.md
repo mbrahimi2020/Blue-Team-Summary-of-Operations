@@ -9,7 +9,7 @@
 
 ### Network Topology
 
-![Azure_Ntework_Topology](https://user-images.githubusercontent.com/74498617/122336908-8a7d7600-cf0b-11eb-89d3-f2b914edf9cd.png)
+![Azure_Ntework_Topology](https://user-images.githubusercontent.com/74498617/122696053-1ba46380-d210-11eb-94a4-f219d562f5a3.png)
 
 The following machines were identified on the network:
 
@@ -19,7 +19,6 @@ The following machines were identified on the network:
   - Gateway: 192.168.1.1
 --------------
 
-![Azure_Ntework_Topology](https://user-images.githubusercontent.com/74498617/122695974-e861d480-d20f-11eb-9e6e-1e38fd4ffb70.png)
 
 **Machines**
 

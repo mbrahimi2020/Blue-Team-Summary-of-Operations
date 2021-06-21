@@ -17,6 +17,9 @@ The following machines were identified on the network:
 - Address Range: 192.168.1.0/24
  - Netmask: 255.255.255.0
   - Gateway: 192.168.1.1
+--------------
+
+![Azure_Ntework_Topology](https://user-images.githubusercontent.com/74498617/122695974-e861d480-d20f-11eb-9e6e-1e38fd4ffb70.png)
 
 **Machines**
 

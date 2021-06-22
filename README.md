@@ -59,9 +59,10 @@ Alert 1 is implemented as follows:
   - **Reliability**: The 400 Bad Request Error is an HTTP response status code that indicates that the server was unable to process the request. 
                      This alert is highly unlikely to generate lots of false positives because it measures all HTTP errors (> 400) **every 5 minutes**.
 
-Before the Attack:
+-**Before the Attack**:
 ![HTTP-Errors](https://user-images.githubusercontent.com/74498617/122436371-c560c780-cf66-11eb-8830-a4c21e245f55.png)
-After the Attack
+
+-**After the Attack**:
 ![Excessive-Http-errors](https://user-images.githubusercontent.com/74498617/122979756-edd13300-d365-11eb-98c8-342b3309780e.png)
 
 #### HTTP Request Size Monitor

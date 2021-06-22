@@ -125,7 +125,7 @@ https://clouddocs.f5.com/api/irules/Limit-the-number-of-HTTP-requests-by-a-clien
 - Why It Works: 
   
      - Blocking/Removing public access to WordPress reduces the number of attacks		
-     - it helps  reject the HTTP requests that are too large.
+     - It helps  reject the HTTP requests that are too large.
   
 **CPU Usage Monitor**
 - Patch:  
@@ -135,4 +135,6 @@ https://clouddocs.f5.com/api/irules/Limit-the-number-of-HTTP-requests-by-a-clien
        
 - Why It Works: 
      - Strong Antivirus should be able to detect/remove malicious malware which are one of the main causes of High CPU usage.  
-        
+      
+      
+    

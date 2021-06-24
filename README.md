@@ -104,33 +104,33 @@ However, this alert is still **highly reliable** because knowing that “CPU usa
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
 
 **Excessive HTTP Errors**
-- Patch: Harden they wordpress by:
+
+- Patch: Harden the wordpress by:
     - Implementing regular updates to WordPress by installing the latest versions of PHP and Plugins
-    - Installing security plugin(s) 
+    - Installing security plugins. 
   
 Suggestions on how to implement this patch are available in https://wordpress.org/plugins/clearfy/
 
 - Why It Works: 
     - Regular updates implement patches and fix vulnerabilities.
+    
 **HTTP Request Size Monitor**
 
 - Patch: 
-
      - Limit the number of HTTP requests within a specified time.
-     - Block HTTP requests from suspicious ips by configuring web server settings
+     - Block HTTP requests from suspicious IPs by configuring the web server settings
      
 Suggestions on how to implement this patch are available in 
 https://clouddocs.f5.com/api/irules/Limit-the-number-of-HTTP-requests-by-a-client-within-a-specified-time.html
 
 - Why It Works: 
-  
      - Blocking/Removing public access to WordPress reduces the number of attacks		
      - It helps  reject the HTTP requests that are too large.
   
 **CPU Usage Monitor**
-- Patch:  
 
-  - Use strong antivirus software
+- Patch:  
+  - Use strong antivirus software.
   - Implement advanced intrusion Detection/prevention and threat management system.
        
 - Why It Works: 
